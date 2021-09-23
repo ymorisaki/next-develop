@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Media from '../components/Media';
 
-const Home = () => (
+const Home = () : JSX.Element => (
   <>
     <Head>
       <title>Next.js</title>

@@ -1,4 +1,4 @@
-const hoge = () => {
+const hoge = () : void => {
   console.log('hoge');
 
   const piyo = 'piyo';

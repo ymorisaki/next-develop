@@ -12,7 +12,7 @@ const Media = ({
   alt: string,
   width: string,
   height: string
-}) => (
+}) : JSX.Element => (
   <div className={styles.media}>
     <img src={src} alt={alt} width={width} height={height} />
     <button type="button" onClick={() => hoge()}>hoge</button>
