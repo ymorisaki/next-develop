@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { SwiperSlide } from 'swiper/react';
 import Media from '../components/Media';
 import Slider from '../components/Slider';
+import styles from './index.module.scss';
 
 const Home = () : JSX.Element => (
   <>
@@ -12,14 +13,14 @@ const Home = () : JSX.Element => (
     <h1>Hello World</h1>
     <Media src="/images/img-01.jpg" width="1200" height="802" alt="" />
 
-    <Slider>
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      <SwiperSlide>Slide 5</SwiperSlide>
-      <SwiperSlide>Slide 6</SwiperSlide>
-      <SwiperSlide>Slide 7</SwiperSlide>
+    <Slider spaceBetween={50}>
+      <SwiperSlide className={styles.slide}>Slide 1</SwiperSlide>
+      <SwiperSlide className={styles.slide}>Slide 2</SwiperSlide>
+      <SwiperSlide className={styles.slide}>Slide 3</SwiperSlide>
+      <SwiperSlide className={styles.slide}>Slide 4</SwiperSlide>
+      <SwiperSlide className={styles.slide}>Slide 5</SwiperSlide>
+      <SwiperSlide className={styles.slide}>Slide 6</SwiperSlide>
+      <SwiperSlide className={styles.slide}>Slide 7</SwiperSlide>
     </Slider>
   </>
 );
