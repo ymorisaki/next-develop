@@ -6,11 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next build && next export",
-    "start": "next start",
-    "test": "echo \"Error: no test specified\""
+    "start": "next start"
   },
   "simple-git-hooks": {
-    "pre-commit": "echo \"Error: no test specified\""
+    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
     "*.tsx": "eslint --fix",
