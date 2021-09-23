@@ -12,7 +12,7 @@
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*.tsx": "eslint --fix",
+    "*.{js,ts,jsx,tsx}": "npx eslint --fix",
     "*.scss": "npx stylelint"
   },
   "dependencies": {
