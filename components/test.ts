@@ -1,7 +1,6 @@
 const hoge = () : void => {
   console.log('hoge');
 
-  const piyo = 'piyo';
   const piyo = 'hoge';
 };
 

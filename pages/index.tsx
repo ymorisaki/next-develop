@@ -12,12 +12,14 @@ const Home = () : JSX.Element => (
     <h1>Hello World</h1>
     <Media src="/images/img-01.jpg" width="1200" height="802" alt="" />
 
-    <Slider>
+    <Slider spaceBetween={50}>
       <SwiperSlide>Slide 1</SwiperSlide>
       <SwiperSlide>Slide 2</SwiperSlide>
       <SwiperSlide>Slide 3</SwiperSlide>
       <SwiperSlide>Slide 4</SwiperSlide>
       <SwiperSlide>Slide 5</SwiperSlide>
+      <SwiperSlide>Slide 6</SwiperSlide>
+      <SwiperSlide>Slide 7</SwiperSlide>
     </Slider>
   </>
 );
