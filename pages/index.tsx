@@ -8,7 +8,7 @@ const Home = () => (
       <title>Next.js</title>
     </Head>
     <h1>Hello World</h1>
-    <Media src="/images/img-01.jpg" alt="" width="1200" height="802" />
+    <Media src="/images/img-01.jpg" width="1200" height="802" alt="" />
   </>
 );
 
