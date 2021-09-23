@@ -10,8 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "simple-git-hooks": {
-    "hoge": "echo \"Error: no test specified\" && exit 1",
-    "pre-commit": "npx lint-staged"
+    "pre-commit": "echo \"Error: no test specified\""
   },
   "lint-staged": {
     "*.tsx": "eslint --fix",
