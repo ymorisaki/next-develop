@@ -12,7 +12,7 @@ const Home = () : JSX.Element => (
     <h1>Hello World</h1>
     <Media src="/images/img-01.jpg" width="1200" height="802" alt="" />
 
-    <Slider spaceBetween={50}>
+    <Slider>
       <SwiperSlide>Slide 1</SwiperSlide>
       <SwiperSlide>Slide 2</SwiperSlide>
       <SwiperSlide>Slide 3</SwiperSlide>
