@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Media from '../components/Media';
 import Slider from '../components/Slider';
+import Button from '../components/Button';
 
 const Home = () : JSX.Element => (
   <>
@@ -10,6 +11,8 @@ const Home = () : JSX.Element => (
     </Head>
     <h1>Hello World</h1>
     <Media src="/images/img-01.jpg" width="1200" height="802" alt="" />
+
+    <Button label="button" />
 
     <Slider
       content={[
