@@ -1,22 +1,22 @@
 import React from 'react';
-import { Swiper } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import styles from './Slider.module.scss';
 
 const Slider = ({
-  children,
-  spaceBetween = 0,
+  content,
 } : {
-    children: JSX.Element[],
-    spaceBetween: number
+    content: JSX.Element[],
     }) : JSX.Element => (
       <Swiper
-        spaceBetween={spaceBetween}
+        className={styles.slider}
+        spaceBetween={20}
         slidesPerView={3}
         loop
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
       >
-        {children}
+        {content.map((jsx, index) => (
+          <SwiperSlide className={styles.slider__item} key={index.toString()}>{jsx}</SwiperSlide>
+        ))}
       </Swiper>
 );
 
