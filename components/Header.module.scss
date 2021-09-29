@@ -1,3 +1,13 @@
 .header {
-  background-color: #fff;
+  width: 100%;
+}
+
+.header__inner {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
 }
