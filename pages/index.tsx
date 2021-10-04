@@ -1,19 +1,19 @@
 import React from 'react';
-import Head from 'next/head';
-import Header from '../components/Header';
-import Media from '../components/Media';
-import Slider from '../components/Slider';
-import Button from '../components/Button';
+import SiteHead from 'components/template/SiteHead';
+import Header from 'components/template/Header';
+import Media from 'components/module/media/Media';
+import Slider from 'components/module/widget/Slider';
+import Button from 'components/module/button/Button';
 
 const Home = () : JSX.Element => (
   <>
-    <Head>
-      <title>Next.js</title>
-    </Head>
+    <SiteHead title="Next" description="Next" />
     <Header />
     <Media src="/images/img-01.jpg" width="1200" height="802" alt="" />
 
     <Button label="button" />
+
+    <a href="/secondary/">secondary</a>
 
     <Slider
       content={[
