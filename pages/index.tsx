@@ -1,19 +1,19 @@
 import React from 'react';
 import SiteHead from 'components/template/SiteHead';
 import Header from 'components/template/Header';
-import Media from 'components/module/media/Media';
 import Slider from 'components/module/widget/Slider';
 import Button from 'components/module/button/Button';
+import Toggle from 'components/module/toggle/Toggle';
 
 const Home = () : JSX.Element => (
   <>
     <SiteHead title="Next" description="Next" />
     <Header />
-    <Media src="/images/img-01.jpg" width="1200" height="802" alt="" />
-
     <Button label="button" />
 
     <a href="/secondary/">secondary</a>
+
+    <h2>Slider</h2>
 
     <Slider
       content={[
@@ -27,6 +27,17 @@ const Home = () : JSX.Element => (
         <a href="/">link8</a>,
         <a href="/">link9</a>,
       ]}
+    />
+
+    <Toggle
+      button={
+        <span>ToggleButton</span>
+      }
+      content={(
+        <>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus obcaecati error consequuntur numquam, necessitatibus, explicabo itaque natus nesciunt exercitationem quas dolorem quasi placeat nulla cupiditate fugiat architecto esse at neque.
+        </>
+      )}
     />
   </>
 );
