@@ -31,7 +31,18 @@ const Home = () : JSX.Element => (
 
     <Toggle
       button={
-        <span>ToggleButton</span>
+        <span>ToggleButton1</span>
+      }
+      content={(
+        <>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus obcaecati error consequuntur numquam, necessitatibus, explicabo itaque natus nesciunt exercitationem quas dolorem quasi placeat nulla cupiditate fugiat architecto esse at neque.
+        </>
+      )}
+    />
+
+    <Toggle
+      button={
+        <span>ToggleButton2</span>
       }
       content={(
         <>

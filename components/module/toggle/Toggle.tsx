@@ -34,7 +34,7 @@ const Toggle: FC<Props> = ({ button, content }) => {
 
     setTimeout(() => {
       contentEl.current?.style?.setProperty('height', `${height}px`);
-    }, 10);
+    }, 100);
   };
 
   const toggleClose = () => {
@@ -44,7 +44,7 @@ const Toggle: FC<Props> = ({ button, content }) => {
 
     setTimeout(() => {
       contentEl.current?.style?.setProperty('height', '0');
-    }, 10);
+    }, 100);
   };
 
   const handleClick = () => setOpen(!open);
@@ -80,10 +80,10 @@ const Toggle: FC<Props> = ({ button, content }) => {
   }, [open]);
 
   return (
-    <>
+    <div>
       <button type="button" ref={buttonEl} onClick={handleClick}>{button}</button>
       <div ref={contentEl} className={styles.content}>{content}</div>
-    </>
+    </div>
   );
 };
 
