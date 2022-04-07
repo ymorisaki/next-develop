@@ -13,6 +13,7 @@ const Toggle: FC<Props> = ({ button, content }) => {
   const contentEl = useRef<HTMLDivElement>(null);
   const firstRender = useRef(true);
   const [open, setOpen] = useState(false);
+  const [sliding, setSliding] = useState(false);
   let height = 0;
 
   const displayChange = () => {
@@ -34,7 +35,7 @@ const Toggle: FC<Props> = ({ button, content }) => {
 
     setTimeout(() => {
       contentEl.current?.style?.setProperty('height', `${height}px`);
-    }, 100);
+    }, 50);
   };
 
   const toggleClose = () => {
@@ -44,10 +45,16 @@ const Toggle: FC<Props> = ({ button, content }) => {
 
     setTimeout(() => {
       contentEl.current?.style?.setProperty('height', '0');
-    }, 100);
+    }, 50);
   };
 
-  const handleClick = () => setOpen(!open);
+  const handleClick = () => {
+    if (sliding) {
+      return;
+    }
+    setOpen(!open);
+    setSliding(true);
+  };
 
   useEffect(() => {
     if (buttonEl.current && contentEl.current) {
@@ -66,6 +73,7 @@ const Toggle: FC<Props> = ({ button, content }) => {
             contentEl.current?.style?.setProperty('display', 'none');
           }
           contentEl.current?.style?.setProperty('height', '');
+          setSliding(false);
         }
       });
     }
