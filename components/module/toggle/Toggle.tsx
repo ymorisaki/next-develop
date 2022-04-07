@@ -23,7 +23,6 @@ const Toggle: FC<Props> = ({ button, content }) => {
         toggleOpen();
       } else {
         toggleClose();
-        console.log('object');
       }
     }
   };
@@ -83,9 +82,7 @@ const Toggle: FC<Props> = ({ button, content }) => {
   return (
     <>
       <button type="button" ref={buttonEl} onClick={handleClick}>{button}</button>
-      <div ref={contentEl} className={styles.content}>
-        {content}
-      </div>
+      <div ref={contentEl} className={styles.content}>{content}</div>
     </>
   );
 };
